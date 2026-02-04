@@ -1,0 +1,8 @@
+{
+  "name": "NEXUS — Second Brain",
+  "description": "A powerful, localized, and privacy-first personal knowledge management application combining notes, tasks, habits, and AI-driven insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
