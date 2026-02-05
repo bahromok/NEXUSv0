@@ -1,9 +1,10 @@
-
 {
   "name": "NEXUS Second Brain",
   "short_name": "NEXUS",
   "description": "Professional personal knowledge management and second brain.",
-  "start_url": "./index.html",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#37352f",
@@ -12,7 +13,7 @@
       "src": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
