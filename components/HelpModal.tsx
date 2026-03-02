@@ -54,10 +54,10 @@ const HelpModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
              </div>
              <div className="text-sm text-[#5f5e5b] leading-relaxed font-medium">
                <p className="mb-2">
-                 1. <strong>Ilkhomov Feruzbek</strong> from Al Khwarizmi school - <a href="https://x.com/ilkhomovf" className="text-[#2383e2] hover:underline">@{`ilkhomovf`}</a>
+                 1. <strong>Ilkhomov Feruzbek</strong> from Al Khwarizmi school - <a href="https://t.me/ilkhomovf" className="text-[#2383e2] hover:underline">@{`ilkhomovf`}</a>
                </p>
                <p className="mb-2">
-                 2. <strong>Murzohamidov Bahromjon</strong> from Al Khwarizmi school - <a href="https://x.com/uvugaga" className="text-[#2383e2] hover:underline">@{`uvugaga`}</a>
+                 2. <strong>Murzohamidov Bahromjon</strong> from Al Khwarizmi school - <a href="https://t.me/uvugaga" className="text-[#2383e2] hover:underline">@{`uvugaga`}</a>
                </p>
                <p>
                  For support, contact: <a href="mailto:bahrommurzohamidow@gmail.com" className="text-[#2383e2] hover:underline">bahrommurzohamidow@gmail.com</a>
