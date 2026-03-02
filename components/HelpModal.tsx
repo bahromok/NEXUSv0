@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { X, BookOpen, Brain, Terminal, Shield } from 'lucide-react';
+import { X, BookOpen, Brain, Terminal, Shield, Users } from 'lucide-react';
 
 const HelpModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
@@ -20,7 +19,6 @@ const HelpModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             <X size={24} />
           </button>
         </header>
-
         <div className="p-8 space-y-10 max-h-[70vh] overflow-y-auto custom-scroll">
           <section className="space-y-4">
              <div className="flex items-center gap-3 text-[#2383e2]">
@@ -28,37 +26,50 @@ const HelpModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                 <h3 className="text-sm font-black uppercase tracking-widest">Thought Anchoring</h3>
              </div>
              <p className="text-sm text-[#5f5e5b] leading-relaxed font-medium">
-               Use double brackets <code className="bg-[#f7f7f5] px-1.5 py-0.5 rounded text-black">[[Note Title]]</code> to create semantic links between entries. The Knowledge Graph visualises these connections as a neural mesh.
+               Use double brackets <code className="bg-[#f7f7f5] px-1.5 py-0.5 rounded text-black">[[Note Title]]</code> to create semantic links between entries. The Knowledge Graph visualises these connections as a neural mesh, enabling seamless navigation through your ideas. This feature promotes interconnected thinking and helps uncover hidden patterns in your notes.
              </p>
           </section>
-
           <section className="space-y-4">
              <div className="flex items-center gap-3 text-[#0f766e]">
                 <Brain size={18} />
                 <h3 className="text-sm font-black uppercase tracking-widest">Neural Synthesis</h3>
              </div>
              <p className="text-sm text-[#5f5e5b] leading-relaxed font-medium">
-               The Brain Hub uses Gemini 3 Pro to analyze your entire knowledge vault. It identifies focus gaps and suggests strategic habits or tasks based on your current thinking.
+               Sorry AI costs,so we are looking forward to implment ai features appropriately soooon :)!
              </p>
           </section>
-
           <section className="space-y-4">
              <div className="flex items-center gap-3 text-[#eb5757]">
                 <Shield size={18} />
                 <h3 className="text-sm font-black uppercase tracking-widest">Local Privacy</h3>
              </div>
              <p className="text-sm text-[#5f5e5b] leading-relaxed font-medium">
-               NEXUS is built with a Zero-Cloud residency protocol. All data is anchored in your browser's persistent storage. Export your Master Vault regularly to ensure data safety across devices.
+               NEXUS is built with a Zero-Cloud residency protocol. All data is anchored in your browser's persistent storage. Export your Master Vault regularly to ensure data safety across devices. This design guarantees that your information remains private, with no external server access, protecting your thoughts from unauthorized eyes.
              </p>
           </section>
+          <section className="space-y-4">
+             <div className="flex items-center gap-3 text-[#f59e0b]">
+                <Users size={18} />
+                <h3 className="text-sm font-black uppercase tracking-widest">Founders</h3>
+             </div>
+             <div className="text-sm text-[#5f5e5b] leading-relaxed font-medium">
+               <p className="mb-2">
+                 1. <strong>Ilkhomov Feruzbek</strong> from Al Khwarizmi school - <a href="https://x.com/ilkhomovf" className="text-[#2383e2] hover:underline">@{`ilkhomovf`}</a>
+               </p>
+               <p className="mb-2">
+                 2. <strong>Murzohamidov Bahromjon</strong> from Al Khwarizmi school - <a href="https://x.com/uvugaga" className="text-[#2383e2] hover:underline">@{`uvugaga`}</a>
+               </p>
+               <p>
+                 For support, contact: <a href="mailto:bahrommurzohamidow@gmail.com" className="text-[#2383e2] hover:underline">bahrommurzohamidow@gmail.com</a>
+               </p>
+             </div>
+          </section>
         </div>
-
         <footer className="p-8 border-t border-[#f1f1f0] bg-[#fcfcfb] text-center">
-           <button onClick={onClose} className="bg-[#37352f] text-white px-8 py-3 rounded-2xl text-xs font-black uppercase tracking-widest shadow-xl">Acknowledge</button>
+           <button onClick={onClose} className="bg-[#37352f] text-white px-8 py-3 rounded-2xl text-xs font-black uppercase tracking-widest shadow-xl hover:bg-[#2a281f] transition-colors">Acknowledge</button>
         </footer>
       </div>
     </div>
   );
 };
-
 export default HelpModal;
